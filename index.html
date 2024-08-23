@@ -1,29 +1,35 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- CSS Link -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- Tailwind Link -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: '#da373d',
-            }
-          }
-        }
-      }
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: "#da373d",
+                    },
+                    fontFamily: {
+                        lato: ["Lato", "sans-serif"],
+                    },
+                },
+            },
+        };
     </script>
 
     <!-- Google font Link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet" />
     <!-- font-family: "Lato", sans-serif; -->
 
     <!-- Fontawesome Link -->
@@ -31,7 +37,111 @@
 
     <title>Flower Shop</title>
 </head>
-<body>
-    
+
+<body class="font-lato">
+    <main>
+        <div class="bg-red-100">
+            <div class="max-w-screen-2xl mx-auto px-12 md:px-20 lg:px-28 flex flex-col items-center lg:justify-between lg:flex-row">
+                <div class="w-auto pt-10 lg:py-10 lg:w-1/2">
+                    <h1 class="text-3xl font-bold text-balance md:text-5xl">
+                        Let's make beautiful flowers a part of your life.
+                    </h1>
+                    <p class="my-8 text-base font-normal text-gray-500 md:text-lg">
+                        It is a long established fact that a reader will be distracted by
+                        the readable content of a page when looking at its layout. The
+                        point of using Lorem Ipsum is that it has a more-or-less normal
+                        distribution of letters.
+                    </p>
+                    <button class="px-8 py-4 text-sm md:text-lg font-bold bg-pink-600 text-white rounded-lg">
+                        Shop Now
+                    </button>
+                </div>
+                <div class="w-auto md:w-3/4 lg:w-1/2 lg:pt-10">
+                    <img class="w-3/4 mx-auto" src="images/pngwing 10.png" alt="Rose" />
+                </div>
+            </div>
+        </div>
+        <div class="max-w-screen-2xl mx-auto px-12 py-8 md:px-20 md:py-16 lg:px-28 lg:py-24">
+            <div class="w-auto text-center mx-auto md:w-1/2 lg:w-4/5">
+                <h2 class="text-2xl font-extrabold md:text-3xl">
+                    Our Featured Flowers
+                </h2>
+                <p class="text-base text-balance font-normal text-gray-500 my-6 md:text-lg">
+                    It is a long established fact that a reader will be distracted by
+                    the readable content of a page when looking at its layout.
+                </p>
+            </div>
+
+            <!-- <div class="grid grid-cols-1 justify-items-center gap-6 md:grid-cols-2 lg:grid-cols-3">
+                <div class="bg-pink-300 rounded-t-full pt-12">
+                    <div class="h-full flex justify-center items-end">
+                        <img class="w-2/3" src="images/pngwing 6.png" alt="">
+                    </div>
+                    <h4 class="text-center">Pink Flower Tree</h4>
+                </div>
+                <div class="bg-blue-300 rounded-t-full pt-12">
+                    <div class="h-full flex justify-center items-center">
+                        <img class="w-2/3 mx-auto" src="images/pngwing 5.png" alt="">  
+                    </div>
+                    <h4 class="text-center">Blue Flower Tree</h4>
+                </div>
+                <div class="bg-green-200 rounded-t-full pt-12">
+                    <div class="h-full flex justify-center items-end">
+                        <img class="w-2/3" src="images/pngwing 7.png" alt="">
+                    </div>
+                    <h4 class="text-center">Green Flower Tree</h4>
+                </div>
+            </div> -->
+
+            <!-- <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div class="card">
+            <div class="bg-blue-100 rounded-t-full px-14 pt-12">
+              <div class="lg:h-full flex justify-center items-end">
+                <img src="images/pngwing 6.png" alt="" />
+              </div>
+            </div>
+            <h4 class="text-center">Blue Flower Tree</h4>
+          </div>
+          <div class="card">
+            <div class="bg-pink-100 rounded-t-full px-14 pt-12">
+              <div class="lg:h-full flex items-center justify-center">
+                <img src="images/pngwing 5.png" alt="" />
+              </div>
+            </div>
+            <h4 class="text-center">Pink Flower Tree</h4>
+          </div>
+          <div class="card">
+            <div class="bg-green-100 rounded-t-full px-14 pt-12">
+              <div class="lg:h-full flex justify-center items-end">
+                <img src="images/pngwing 7.png" alt="" />
+              </div>
+            </div>
+            <h4 class="text-center">Green Flower Tree</h4>
+          </div>
+        </div> -->
+
+            <div class="grid grid-cols-1 gap-6 justify-items-center md:grid-cols-2 lg:grid-cols-3">
+                <div class="card">
+                    <div class="bg-blue-100 rounded-t-full px-14 flex justify-center items-end h-[320px] w-[280px] lg:w-auto xl:h-[450px]">
+                        <img class="" src="images/pngwing 6.png" alt="" />
+                    </div>
+                    <h4 class="text-center">Blue Flower Tree</h4>
+                </div>
+                <div class="card">
+                    <div class="bg-pink-100 rounded-t-full px-14 flex justify-center items-center h-[320px] w-[280px] lg:w-auto xl:h-[450px]">
+                        <img class="" src="images/pngwing 5.png" alt="" />
+                    </div>
+                    <h4 class="text-center">Blue Flower Tree</h4>
+                </div>
+                <div class="card">
+                    <div class="bg-green-100 rounded-t-full px-14 flex justify-center items-end h-[320px] w-[280px] lg:w-auto xl:h-[450px]">
+                        <img class="" src="images/pngwing 7.png" alt="" />
+                    </div>
+                    <h4 class="text-center">Blue Flower Tree</h4>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
